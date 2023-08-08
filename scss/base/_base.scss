@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+body {
+  font-family: $font-main;
+  background-color: $background;
+  color: $white;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+a {
+  color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px $container-padding;
+  max-width: $container-width + ($container-padding * 2);
+}
