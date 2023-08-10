@@ -1,0 +1,25 @@
+@import "./episode-card";
+
+.episodes {
+  padding-bottom: 160px;
+}
+
+.episodes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 64px;
+}
+
+.episodes__title {
+  font-size: 64px;
+  line-height: 124%;
+  letter-spacing: 2.88px;
+  transform: translateY(-10px);
+}
+
+.episodes__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}

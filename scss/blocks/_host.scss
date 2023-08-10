@@ -1,0 +1,37 @@
+.host {
+  padding: 100px 0px;
+}
+
+.host__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.host__title {
+  margin-bottom: 28px;
+  font-size: 65px;
+  line-height: 122%;
+  letter-spacing: 2.88px;
+}
+
+.host__meet {
+  color: $accent;
+  line-height: 150%;
+}
+
+.host__text {
+  max-width: 556px;
+  margin-bottom: 33px;
+  font-size: 22px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.host__img {
+  max-width: 560px;
+
+  img {
+    border-radius: 14px;
+  }
+}

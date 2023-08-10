@@ -17,3 +17,18 @@ a {
   padding: 0px $container-padding;
   max-width: $container-width + ($container-padding * 2);
 }
+
+.castaway__btn {
+  background-color: $accent;
+  font-size: 17px;
+  line-height: 158%;
+  padding: 12px 15px;
+
+  &--rounded {
+    border-radius: 6px;
+  }
+}
+
+.none {
+  display: none !important;
+}
