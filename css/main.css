@@ -302,6 +302,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 60px;
 }
 
 .host__title {
@@ -411,4 +412,32 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+}
+
+.footer {
+  font-size: 17px;
+  line-height: 158%;
+}
+
+.footer__content {
+  padding: 100px 0px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 30px;
+}
+
+.footer__logo-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 11px;
+}
+
+.footer__nav-list {
+  display: grid;
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */
