@@ -117,6 +117,10 @@ body {
 
 a {
   color: #ffffff;
+  transition: filter 0.2s ease-in;
+}
+a:hover {
+  filter: saturate(1.5);
 }
 
 .container {
@@ -130,9 +134,17 @@ a {
   font-size: 17px;
   line-height: 158%;
   padding: 12px 15px;
+  transition: all 0.2s ease-in;
 }
 .castaway__btn--rounded {
   border-radius: 6px;
+}
+.castaway__btn:hover {
+  filter: saturate(1.5);
+}
+.castaway__btn:active {
+  position: relative;
+  bottom: -1px;
 }
 
 .none {
@@ -337,12 +349,22 @@ a {
 }
 
 .cta__content {
+  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 387px;
   padding: 60px;
   border-radius: 32px;
   background-color: #000000;
+}
+.cta__content ::after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  bottom: -33px;
+  width: 147px;
+  height: 91px;
+  background-image: url("../imgs/main/cta/decor-elements.svg");
 }
 
 .cta__subscribe {
@@ -389,6 +411,7 @@ a {
   margin-bottom: 21px;
   display: flex;
   gap: 5px;
+  pointer-events: none;
 }
 
 .comment__text {

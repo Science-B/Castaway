@@ -10,6 +10,11 @@ body {
 
 a {
   color: $white;
+  transition: filter 0.2s ease-in;
+
+  &:hover {
+    filter: saturate(1.5);
+  }
 }
 
 .container {
@@ -23,9 +28,19 @@ a {
   font-size: 17px;
   line-height: 158%;
   padding: 12px 15px;
+  transition: all 0.2s ease-in;
 
   &--rounded {
     border-radius: 6px;
+  }
+
+  &:hover {
+    filter: saturate(1.5);
+  }
+
+  &:active {
+    position: relative;
+    bottom: -1px;
   }
 }
 
