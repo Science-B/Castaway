@@ -1,0 +1,25 @@
+.comment__card {
+  padding: 54px 60px 51px 50px;
+  min-height: 321px;
+  background-color: $black;
+  border-radius: 32px;
+}
+
+.comment__rate {
+  margin-bottom: 21px;
+  display: flex;
+  gap: 5px;
+}
+
+.comment__text {
+  max-width: 313px;
+  margin-bottom: 19px;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.comment__author {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  line-height: 120%;
+}

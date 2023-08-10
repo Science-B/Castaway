@@ -1,0 +1,11 @@
+@import "./comment-card";
+
+.comments {
+  padding: 100px 0px;
+}
+
+.comments__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
