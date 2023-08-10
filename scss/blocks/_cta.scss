@@ -3,12 +3,23 @@
 }
 
 .cta__content {
+  position: relative;
   display: flex;
   justify-content: space-between;
   min-height: 387px;
   padding: 60px;
   border-radius: 32px;
   background-color: $black;
+
+  ::after {
+    content: "";
+    position: absolute;
+    left: -33px;
+    bottom: -33px;
+    width: 147px;
+    height: 91px;
+    background-image: url("../imgs/main/cta/decor-elements.svg");
+  }
 }
 
 .cta__subscribe {
