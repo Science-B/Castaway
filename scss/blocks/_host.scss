@@ -1,5 +1,13 @@
 .host {
   padding: 100px 0px;
+
+  @include mediaTablet {
+    padding: 50px 0px;
+  }
+
+  @include mediaPhoneLG {
+    padding: 25px 0px;
+  }
 }
 
 .host__content {
@@ -7,6 +15,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+
+  @include mediaTablet {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
 }
 
 .host__title {
@@ -14,11 +27,36 @@
   font-size: 65px;
   line-height: 122%;
   letter-spacing: 2.88px;
+
+  @include mediaTablet {
+    font-size: 58px;
+    margin-bottom: 14px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 28px;
+  }
 }
 
 .host__meet {
   color: $accent;
   line-height: 150%;
+
+  @include mediaTablet {
+    font-size: 18px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 16px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 14px;
+  }
+
+  @include mediaPhoneSM {
+    font-size: 12px;
+  }
 }
 
 .host__text {
@@ -27,6 +65,25 @@
   font-size: 22px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.7);
+
+  @include mediaTablet {
+    font-size: 18px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  @include mediaPhoneSM {
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
 }
 
 .host__img {

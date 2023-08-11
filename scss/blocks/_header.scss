@@ -1,10 +1,18 @@
 .header {
   min-height: 1032px;
   padding-bottom: 100px;
+
+  @include mediaTablet {
+    padding-bottom: 50px;
+  }
 }
 
 .header__top {
   padding: 43px 0px;
+
+  @include mediaTablet {
+    padding: 20px 0px;
+  }
 }
 
 .header__content {
@@ -12,6 +20,10 @@
   display: flex;
   align-items: center;
   column-gap: 60px;
+
+  @include mediaTablet {
+    flex-direction: column;
+  }
 }
 
 .header__img {
@@ -22,7 +34,7 @@
     content: "";
     position: absolute;
     background: url("../imgs/header/decor-elements.svg");
-    left: 0;
+    left: 0px;
     top: 0;
     width: 68px;
     height: 74px;
@@ -32,25 +44,52 @@
 
 .header__info {
   margin-top: 130px;
+
+  @include mediaTablet {
+    margin-top: 65px;
+  }
+
+  @include mediaPhoneMD {
+    margin-top: 40px;
+  }
 }
 
 .header__title {
   position: relative;
   max-width: 530px;
   font-size: 70px;
-  line-height: 88px;
+  line-height: 126%;
   letter-spacing: 3.2px;
   margin-bottom: 90px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    background: url("../imgs/header/decor-underline.svg");
-    left: 0;
-    bottom: -15px;
-    width: 160px;
-    height: 104px;
+  span {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      background: url("../imgs/header/decor-underline.svg");
+      left: -15px;
+      bottom: -15px;
+      width: 160px;
+      height: 104px;
+    }
+  }
+
+  @include mediaTablet {
+    max-width: 650px;
+    margin-bottom: 45px;
+    font-size: 64px;
+  }
+
+  @include mediaPhoneLG {
+    margin-bottom: 35px;
+    font-size: 58px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 52px;
   }
 }
 

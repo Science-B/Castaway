@@ -42,8 +42,22 @@ a {
     position: relative;
     bottom: -1px;
   }
+
+  @include mediaPhoneMD {
+    font-size: 14px;
+    pad: 9px 8px;
+  }
+
+  @include mediaPhoneSM {
+    font-size: 12px;
+    pad: 6px 7px;
+  }
 }
 
 .none {
   display: none !important;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }

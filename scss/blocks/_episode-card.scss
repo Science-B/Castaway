@@ -4,6 +4,10 @@
   background-color: $black;
   padding: 40px;
   border-radius: 32px;
+
+  @include mediaTablet {
+    flex-direction: column;
+  }
 }
 
 .episode-card__btn {
@@ -15,6 +19,15 @@
   padding: 2px 16px;
   border-radius: 6px;
   line-height: 158%;
+
+  @include mediaPhoneLG {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  @include mediaPhoneMD {
+    margin-bottom: 20px;
+  }
 }
 
 .episode-card__number {
@@ -30,10 +43,26 @@
   font-size: 64px;
   line-height: 110%;
   letter-spacing: 2.56px;
+
+  @include mediaTablet {
+    font-size: 58px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 28px;
+  }
 }
 
 .episode-card__text {
   color: rgba($white, 0.7);
   line-height: 150%;
   margin-bottom: 18px;
+
+  @include mediaTablet {
+    font-size: 18px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 14px;
+  }
 }

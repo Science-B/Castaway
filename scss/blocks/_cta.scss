@@ -1,5 +1,13 @@
 .cta {
   padding: 100px 0px;
+
+  @include mediaTablet {
+    padding: 50px 0px;
+  }
+
+  @include mediaPhoneLG {
+    padding: 25px 0px;
+  }
 }
 
 .cta__content {
@@ -20,6 +28,12 @@
     height: 91px;
     background-image: url("../imgs/main/cta/decor-elements.svg");
   }
+
+  @include mediaTablet {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .cta__subscribe {
@@ -28,6 +42,25 @@
   p {
     color: $accent;
     line-height: 150%;
+
+    @include mediaTablet {
+      font-size: 18px;
+    }
+
+    @include mediaPhoneLG {
+      font-size: 16px;
+      margin-bottom: 17px;
+    }
+
+    @include mediaPhoneMD {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    @include mediaPhoneSM {
+      font-size: 12px;
+      margin-bottom: 13px;
+    }
   }
 }
 
@@ -36,6 +69,21 @@
   font-size: 72px;
   line-height: 122%;
   letter-spacing: 2.88px;
+
+  @include mediaTablet {
+    font-size: 36px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 30px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 24px;
+  }
+
+  @include mediaPhoneSM {
+  }
 }
 
 .cta__form {
@@ -55,4 +103,24 @@
   border-radius: 6px;
   border: 1px solid $background;
   background: $background;
+
+  @include mediaTablet {
+    font-size: 18px;
+    padding: 20px 18px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 16px;
+    padding: 18px 16px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 14px;
+    padding: 16px 14px;
+  }
+
+  @include mediaPhoneSM {
+    font-size: 12px;
+    padding: 14px 12px;
+  }
 }
