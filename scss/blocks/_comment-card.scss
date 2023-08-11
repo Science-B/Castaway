@@ -1,8 +1,12 @@
 .comment__card {
   padding: 54px 60px 51px 50px;
-  min-height: 321px;
   background-color: $black;
+  min-height: 321px;
   border-radius: 32px;
+
+  @include mediaTablet {
+    padding: 30px;
+  }
 }
 
 .comment__rate {
@@ -17,10 +21,38 @@
   margin-bottom: 19px;
   font-size: 36px;
   line-height: 120%;
+
+  @include mediaTablet {
+    font-size: 30px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 24px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 18px;
+  }
 }
 
 .comment__author {
   color: rgba(255, 255, 255, 0.7);
   font-size: 24px;
   line-height: 120%;
+
+  @include mediaTablet {
+    font-size: 18px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 16px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 14px;
+  }
+
+  @include mediaPhoneSM {
+    font-size: 12px;
+  }
 }

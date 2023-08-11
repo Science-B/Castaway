@@ -2,6 +2,14 @@
 
 .episodes {
   padding-bottom: 160px;
+
+  @include mediaTablet {
+    padding-bottom: 80px;
+  }
+
+  @include mediaPhoneLG {
+    padding: 40px 0px;
+  }
 }
 
 .episodes__header {
@@ -9,6 +17,14 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 64px;
+
+  @include mediaTablet {
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: 704px) {
+    flex-direction: column;
+  }
 }
 
 .episodes__title {
@@ -16,6 +32,31 @@
   line-height: 124%;
   letter-spacing: 2.88px;
   transform: translateY(-10px);
+
+  @include mediaTablet {
+    font-size: 58px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 52px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 48px;
+  }
+}
+
+.episodes__btn {
+  &--bottom {
+    display: none;
+
+    @media screen and (max-width: 705px) {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 705px) {
+    display: none;
+  }
 }
 
 .episodes__content {
