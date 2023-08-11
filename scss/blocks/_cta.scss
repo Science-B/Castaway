@@ -19,7 +19,7 @@
   border-radius: 32px;
   background-color: $black;
 
-  ::after {
+  &::after {
     content: "";
     position: absolute;
     left: -33px;
