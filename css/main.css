@@ -623,7 +623,7 @@ a:hover {
   border-radius: 32px;
   background-color: #000000;
 }
-.cta__content ::after {
+.cta__content::after {
   content: "";
   position: absolute;
   left: -33px;
